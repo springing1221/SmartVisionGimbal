@@ -23,13 +23,15 @@
 - 执行机构：双轴舵机云台（轮趣 SC20F）
 - 舵机供电：12 V 电池经降压模块转换为 5 V 独立供电
 
-## 工程目录
+## 工程结构
 
-完整工程压缩包上传后，建议从仓库根目录下载并解压。主要工程文件位于：
+完整工程压缩包计划以 `SmartVisionGimbal.zip` 的形式放在仓库根目录。解压后主要工程文件位于：
 
-`project/td_project/SmartVisionGimbal.al`
+`SmartVisionGimbal/project/td_project/SmartVisionGimbal.al`
 
-用户 HDL 源码、约束文件及 IP 资源位于 `project/user_source/`；工程生成及集成文件位于 `project/td_project/`。
+用户 HDL 源码、约束文件及 IP 资源位于 `SmartVisionGimbal/project/user_source/`；工程生成及集成文件位于 `SmartVisionGimbal/project/td_project/`。
+
+> **当前仓库状态：** 已提交本项目 README。完整 FPGA 工程压缩包尚待上传；请勿将当前仓库页面视为完整源码已提交。
 
 ## 打开工程
 
@@ -38,8 +40,4 @@
 3. 检查工程文件引用路径及本机已安装的器件库、IP 资源和工具版本。
 4. 根据实际开发板连接摄像头、HDMI 显示器及云台控制接口。
 
-> 注意：工程中包含与安路器件及 IP 相关的配置/生成文件。不同开发环境下可能需要安装匹配版本的器件库和 IP 组件。请以本项目实际硬件及工具环境为准。
-
-## 当前版本说明
-
-本仓库用于保存本次整合后的工程版本。工程是否能够在其他计算机上直接复现，取决于相应开发工具、器件支持包及 IP 资源是否齐全。请在使用前核对工程依赖。
+工程中包含与安路器件及 IP 相关的配置/生成文件。不同开发环境下可能需要安装匹配版本的器件库和 IP 组件。请在使用前核对工程依赖。
